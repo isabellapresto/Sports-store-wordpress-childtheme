@@ -16,6 +16,7 @@ add_action( 'wp_head', 'change_header_background_color' );
 
 //tar bort produktbeskrivning
 function remove_product_description() {
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 }
 add_action( 'woocommerce_single_product_summary', 'remove_product_description', 1 );
+
